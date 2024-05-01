@@ -1,0 +1,10 @@
+"""Bazel local_path_override bug example"""
+
+module(name = "bzlmod-local-module-bug", version = "0.0.0")
+
+bazel_dep(name = "vendored_module")
+
+local_path_override(
+    module_name = "vendored_module",
+    path = "third_party/vendored_module",
+)

@@ -1,0 +1,3 @@
+"""Simulated vendored module based on bazel_skylib"""
+
+module(name = "vendored_module", version = "0.0.0")
